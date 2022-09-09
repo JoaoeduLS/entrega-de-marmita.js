@@ -1,0 +1,135 @@
+<html>
+    <body>
+        <script>
+ var cliente = prompt("nome do cliente: ");
+ var endereco = prompt("digite seu endereco:");
+ var numero = prompt("digite seu numero de celular:");
+ var data = new Date();
+ var semana = data.getDay();
+ var cardapio;
+ var novoPedido;
+
+ switch(semana) {
+    case 0://0 = sabado
+    
+    function pedido(cardapio){
+      if(cardapio == 1 ){
+        cardapio = 'feijoada  '
+      }else if(cardapio == 2){
+        cardapio = 'bife com batata frita'
+      }
+      alert(`Olá ${cliente}, residente em :${endereco} telefone :${numero}, seu pedido de ${cardapio} foi anotado`)    
+    }
+
+    while(novoPedido != 0){
+        var cardapio = Number(prompt("cardápio: 1- feijoada  /2- bife com batata frita:"))
+        novoPedido = prompt("Para refazer o seu pedido(digite 1)| caso deseja sair(digite 0):") 
+        pedido(cardapio)
+      }
+    break;
+ }
+
+    switch(semana) {
+    case 1: //1 = segunda-feira
+    
+    function pedido(cardapio){
+      if(cardapio == 1 ){
+        cardapio = 'linguiça frita'
+      }else if(cardapio == 2){
+        cardapio = 'carne assada '
+      }
+      alert(`Olá ${cliente}, residente em :${endereco} telefone :${numero}, seu pedido de ${cardapio} foi anotado`)  
+    }
+
+    while(novoPedido != 0){
+        var cardapio = Number(prompt("cardápio:  1- linguiça frita /2- carne assada: "))
+        novoPedido = prompt("Para refazer o seu pedido(digite 1)| caso deseja sair(digite 0):")  
+        pedido(cardapio)
+      }
+    break;
+  }
+
+    switch(semana) {
+    case 2: //2 = terça-feira 
+
+    function pedido(cardapio){
+      if(cardapio == 1 ){
+        cardapio = ' peito de frango frito'
+      }else if(cardapio == 2){
+        cardapio = 'bisteca'
+      }
+      alert(`Olá ${cliente}, residente em :${endereco} telefone :${numero}, seu pedido de ${cardapio} foi anotado`)  
+    }
+
+          while(novoPedido != 0){
+            var cardapio = Number(prompt("cardápio: 1- peito de frango frito / 2- bisteca: "))
+            novoPedido = prompt("Para refazer o seu pedido(digite 1)| caso deseja sair(digite 0):") 
+            pedido(cardapio)
+          }
+    break; 
+  }
+
+    switch(semana) {
+    case 3: //3 = quarta-feira
+
+    function pedido(cardapio){
+        if(cardapio == 1 ){
+          cardapio = 'costela de porco frita'
+        }else if(cardapio == 2){
+          cardapio = 'carne de panela com mandioca'
+        }
+        alert(`Olá ${cliente}, residente em :${endereco} telefone :${numero}, seu pedido de ${cardapio} foi anotado`) 
+      }
+
+    while(novoPedido != 0){
+        var cardapio = Number(prompt("cardápio: 1- costela de porco frita / 2- carne de panela com mandioca:"))
+        novoPedido = prompt("Para refazer o seu pedido(digite 1)| caso deseja sair(digite 0):")  
+        pedido(cardapio)
+      }
+    break;
+  }
+
+    switch(semana) {
+    case 4: //4 = quinta-feira
+
+    function pedido(cardapio){
+      if(cardapio == 1 ){
+        cardapio = 'costela de porco no molho'
+      }else if(cardapio == 2){
+        cardapio = 'fricasse de frango'
+      }
+      alert(`Olá ${cliente}, residente em :${endereco} telefone :${numero}, seu pedido de ${cardapio} foi anotado`)
+    }
+
+    while(novoPedido != 0){
+        var cardapio = Number(prompt("cardápio: 1- costela de porco no molho/ 2- fricasse de frango:"))
+        novoPedido = prompt("Para refazer o seu pedido(digite 1)| caso deseja sair(digite 0):") 
+        pedido(cardapio)
+      }
+    break;
+    }
+
+    switch(semana) {
+    case 5: //5 = sexta-feira
+    
+    function pedido(cardapio){
+      if(cardapio == 1 ){
+        cardapio = 'strognofe '
+      }else if(cardapio == 2){
+        cardapio = 'rabada '
+      }
+      alert(`Olá ${cliente}, residente em :${endereco} telefone :${numero}, seu pedido de ${cardapio} foi anotado`)    
+    }
+
+    while(novoPedido != 0){
+        var cardapio = Number(prompt("cardápio: 1- strognofe /2- rabada: "))
+        novoPedido = prompt("Para refazer o seu pedido(digite 1)| caso deseja sair(digite 0):")  
+        pedido(cardapio)
+      }
+      
+
+    break;
+  }
+        </script>
+    </body>
+</html>
